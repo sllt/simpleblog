@@ -1,0 +1,14 @@
+ <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+      <% @articles.each do |article| %>
+    <article class="page">
+  <div class="post-content">
+    <header><h1><%= link_to article.title, article_path(article) %></h1></header><br>
+    <p><%= article.content %></p>
+  </div>
+</article>
+  <% end %>
+
+</div></div>
+    <div class="clearfix"></div>
+  </div>
